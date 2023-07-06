@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="org.gnome.shell.extensions.input-source-binder" path="/org/gnome/shell/extensions/input-source-binder/">
+        <key type="as" name="switch-to-input-source-1">
+            <default><![CDATA[['<Alt><Shift>1']]]></default>
+            <summary>Switch to input source 1</summary>
+        </key>
+        <key type="as" name="switch-to-input-source-2">
+            <default><![CDATA[['<Alt><Shift>2']]]></default>
+            <summary>Switch to input source 2</summary>
+        </key>
+        <key type="as" name="switch-to-input-source-3">
+            <default><![CDATA[['<Alt><Shift>3']]]></default>
+            <summary>Switch to input source 3</summary>
+        </key>
+        <key type="as" name="switch-to-input-source-4">
+            <default><![CDATA[['<Alt><Shift>4']]]></default>
+            <summary>Switch to input source 4</summary>
+        </key>
+        <key type="as" name="switch-to-input-source-5">
+            <default><![CDATA[['<Alt><Shift>5']]]></default>
+            <summary>Switch to input source 5</summary>
+        </key>
+    </schema>
+</schemalist>
