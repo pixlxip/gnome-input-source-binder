@@ -22,8 +22,7 @@ const SHORTCUT_PREFIX = "switch-to-input-source-"
 
 const Main = imports.ui.main;
 const ExtensionUtils = imports.misc.extensionUtils;
-const { Gio, Meta, Shell } = imports.gi;
-const Me = ExtensionUtils.getCurrentExtension();
+const { Meta, Shell } = imports.gi;
 const InputSourceManager = imports.ui.status.keyboard.getInputSourceManager();
 
 function setInputSource(index) {
