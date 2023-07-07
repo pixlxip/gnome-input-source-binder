@@ -33,17 +33,16 @@ function setInputSource(index) {
 
 
 class Extension {
-    constructor() {
-        this.settings = ExtensionUtils.getSettings()
-    }
 
     enable() {
         const source_number = Object.keys(InputSourceManager.inputSources).length;
         this.input_source_count = Math.min(5, source_number)
+        
+        const settings = ExtensionUtils.getSettings()
 
         for (let i = 0; i < this.input_source_count; i++) {
             Main.wm.addKeybinding(
-                SHORTCUT_PREFIX + (i + 1), this.settings,
+                SHORTCUT_PREFIX + (i + 1), settings,
                 Meta.KeyBindingFlags.IGNORE_AUTOREPEAT,
                 Shell.ActionMode.NORMAL | Shell.ActionMode.OVERVIEW,
                 setInputSource(i));
