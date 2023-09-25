@@ -18,16 +18,16 @@
 
 /* exported init */
 
-const SHORTCUT_PREFIX = "switch-to-input-source-"
+const SHORTCUT_PREFIX = "switch-to-output-source-"
 
 const Main = imports.ui.main;
 const ExtensionUtils = imports.misc.extensionUtils;
 const { Meta, Shell } = imports.gi;
-const InputSourceManager = imports.ui.status.keyboard.getInputSourceManager();
+const OutputSourceManager = imports.ui.status.keyboard.getOutputSourceManager();
 
-function setInputSource(index) {
+function setOutputSource(index) {
     return () => {
-        InputSourceManager.inputSources[index].activate()
+        OutputSourceManager.outputSources[index].activate()
     };
 }
 
@@ -35,8 +35,8 @@ function setInputSource(index) {
 class Extension {
 
     enable() {
-        const source_number = Object.keys(InputSourceManager.inputSources).length;
-        this.input_source_count = Math.min(5, source_number)
+        const source_number = Object.keys(OutputSourceManager.outputSources).length;
+        this.output_source_count = Math.min(5, source_number)
         
         const settings = ExtensionUtils.getSettings()
 
@@ -45,7 +45,7 @@ class Extension {
                 SHORTCUT_PREFIX + (i + 1), settings,
                 Meta.KeyBindingFlags.IGNORE_AUTOREPEAT,
                 Shell.ActionMode.NORMAL | Shell.ActionMode.OVERVIEW,
-                setInputSource(i));
+                setOutputSource(i));
         }
     }
 
