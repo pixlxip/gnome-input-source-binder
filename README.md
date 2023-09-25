@@ -1,4 +1,4 @@
-# input source binder gnome extensions
+# output source binder gnome extensions
 ## This DOES NOT WORK
 Binds shortcuts to output sources (up to 5). 
 * Alt+Shift+1 - the first output source
