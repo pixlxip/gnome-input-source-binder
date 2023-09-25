@@ -1,9 +1,9 @@
 {
-    "uuid": "input-source-binder@mifishe.github.com",
-    "name": "Input Source Binder",
-    "description": "Binds shortcuts to input sources (up to 5). Alt+Shift+1 - the first input source, Alt+Shift+2 - the second one and etc.",
-    "settings-schema": "org.gnome.shell.extensions.input-source-binder",
-    "url": "https://github.com/mifishe/gnome-input-source-binder",
+    "uuid": "output-source-binder@pixlxip.github.com",
+    "name": "Output Source Binder",
+    "description": "Binds shortcuts to Ouput sources (up to 5). Alt+Shift+1 - the first output source, Alt+Shift+2 - the second one and etc. (Can't be used with input-source-binder)",
+    "settings-schema": "org.gnome.shell.extensions.output-source-binder",
+    "url": "https://github.com/pixlxip/gnome-output-source-binder",
     "shell-version": [
         "44"
     ]              
